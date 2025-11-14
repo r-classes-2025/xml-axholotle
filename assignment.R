@@ -77,8 +77,8 @@ read_letter <- function(xml_path) {
   # записываем в тиббл
   res <- tibble(
     date = ifelse(length(date) == 0, NA, date),
-    recipient = ifelse(length(corresp) == 0, NA, corresp),
-    volume = ifelse(length(vol) == 0, NA, vol)
+    corresp = ifelse(length(corresp) == 0, NA, corresp),
+    vol = ifelse(length(vol) == 0, NA, vol)
   )
     # ваш код здесь
 
